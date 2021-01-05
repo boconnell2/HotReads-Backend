@@ -9,7 +9,7 @@ BookCopy.destroy_all()
 end
 
 30.times do 
-    Book.create(title: Faker::Book.title, author: Faker::Book.author, genre: Faker::Book.author, year:Faker::Number.within(range: 1900..2020), rating: Faker::Number.within(range: 0..5))
+    Book.create(title: Faker::Book.title, author: Faker::Book.author, genre: Faker::Book.genre, year:Faker::Number.within(range: 1900..2020), rating: Faker::Number.within(range: 0..5))
 end
 
 conditionArray = ['Excellent', 'Fair', 'Like New', '$hit', 'Rough', 'Worn']
