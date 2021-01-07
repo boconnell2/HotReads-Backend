@@ -6,6 +6,7 @@ BookCopy.destroy_all()
 
 
 people_images = [
+    '',
     'https://images.squarespace-cdn.com/content/v1/5a4f9f16ccc5c5504456e2a7/1562716587623-BXA3F4OI8N17TSTT6E7P/ke17ZwdGBToddI8pDm48kMXRibDYMhUiookWqwUxEZ97gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0luUmcNM2NMBIHLdYyXL-Jww_XBra4mrrAHD6FMA3bNKOBm5vyMDUBjVQdcIrt03OQ/07022019_AnthonyRubbo_175.jpg?format=2500w',
     'https://miro.medium.com/max/3150/2*sSQ-hi9OX2OoBeZYttDfvQ.jpeg',
     'https://miro.medium.com/fit/c/1360/1360/1*qW201jhbvG9soe2RiEaMnw.jpeg',
@@ -13,7 +14,7 @@ people_images = [
     'https://www3.pictures.zimbio.com/gi/Ian+Hollander+fZDNkw1wZxCm.jpg'
 ]
 
-5.times do 
+6.times do 
     User.create(name: Faker::FunnyName.two_word_name, username:Faker::Internet.username, img: people_images.pop, email: Faker::Internet.email, bio:"I read Books!" )
 end
 
