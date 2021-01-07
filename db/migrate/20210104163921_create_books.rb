@@ -6,6 +6,8 @@ class CreateBooks < ActiveRecord::Migration[6.0]
       t.string :genre
       t.float :rating
       t.integer :year
+      t.string :img
+      t.string :description
 
       t.timestamps
     end

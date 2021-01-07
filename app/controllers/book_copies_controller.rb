@@ -1,2 +1,5 @@
 class BookCopiesController < ApplicationController
+
+
+
 end
